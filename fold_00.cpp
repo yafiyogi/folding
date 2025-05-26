@@ -55,6 +55,7 @@ int main()
   std::cout << not_folding(4, 1, 2, 3, 4) << '\n';
   // std::cout << '\n';
   // std::cout << add_nums(10, 1, 2, 3, 4) << '\n';
-  // std::cout << '\n';
   // std::cout << add_nums(4, 1, double(2.0), 3, 4) << '\n';
+  // printf("%d %d %d %d\n", 1, 2, 3, 4, 5);
+  // printf("%d %d %d %d\n", 1, 2, 3);
 }

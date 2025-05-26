@@ -55,7 +55,10 @@ int fold_thing(Args && ...args)
   // return ( args, ... );
 
   int rv = 0;
+
   ( (rv += args), ... );
+  //( ..., (rv += args));
+
   return rv;
 }
 
@@ -88,5 +91,5 @@ int main()
   // Thing{2};
   // Thing{3};
   // Thing{4};
-  //std::cout << fold_thing(Thing{1}, Thing{2}, Thing{3}, Thing{4}) << std::endl;
+  // std::cout << fold_thing(Thing{1}, Thing{2}, Thing{3}, Thing{4}) << std::endl;
 }
